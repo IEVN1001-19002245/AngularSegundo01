@@ -1,0 +1,17 @@
+<div>
+    <h1>multiplicar numeros</h1>
+    <form [formGroup]="formulario">
+        <div>
+            <label for="a">a</label>
+            <input id="a" formControlName="a" type="text">
+        </div>
+        <div>
+            <label for="b">b</label>
+            <input id="b" formControlName="b" type="text">
+        </div>
+        <button type="button" class="btn btn-primary" (click)="calcular()">Calcular</button>
+        <div >
+            <h1>Resultado: {{ resultado }}</h1>
+        </div>
+    </form>
+</div>
